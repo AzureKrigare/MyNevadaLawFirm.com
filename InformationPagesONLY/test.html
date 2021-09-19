@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* Google Font */
+        @import url('https://fonts.googleapis.com/css?family=Ubuntu');
+        @import url('https://fonts.googleapis.com/css?family=Noto+Sans');
+        @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+
+        * {
+  font-family: 'Noto Sans', sans-serif;
+  font-size: 40px;
+  color: white;
+  margin: 0;
+  font-style: italic;
+}
+
+div {
+    padding: 70px;
+    outline: 5px dotted green;
+    margin: 25px;
+}
+
+#layered_shadow {
+    background-color: #000;
+}
+
+#rainbow_effect {
+    background-color: #000;
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #FF0000;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0 2px 2px #FF0000, 
+                -2px 5px 0 #FF7F00, 
+                -4px 10px 0 #FFFF00,
+                -8px 15px 0 #00FF00,
+                -12px 20px 0 #0000FF,
+                -16px 25px 0 #4B0082,
+                -20px 30px 0 #9400D3;
+}
+
+
+#glowing_text {
+    background-color: #121212;
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #CFC547;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 10px 10px 25px rgb(81,67,21),
+                -10px 10px 25px rgb(81,67,21),
+                -10px -10px 25px rgb(81,67,21),
+                10px -10px 25px rgb(81,67,21);
+}
+
+
+#descending_shadow {
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #CFC547;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
+}
+
+#perspective_3d {
+    background-color: #efefef;
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 80px;
+    font-weight: bold;
+    color: #000;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0 2px 3px #747474, 
+                1px 3px 4px #222, 
+                0 8px 3px #474747, 
+                0 11px 4px #747474,
+                0 14px 4px #565656,
+                0 17px 4px #343434,
+                0 20px 4px #171717;
+}
+
+
+#blurred {
+    background-color: #121212;
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: transparent;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0 0 8px #316472;
+}
+
+#descending {
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #CFC547;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 0px 11px 10px rgba(81,67,21,0.8);
+}
+
+#beautifulOutline {
+    background-color: black;
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #121212;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: -1px 1px 0 #41ba45,
+                1px 1px 0 #c63d2b,
+                1px -1px 0 #42afac,
+                -1px -1px 0 #c6c23f;
+}
+
+#outlined {
+    margin: 20px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 5px;
+}
+
+#shadow01 {
+  color: white;
+  -webkit-text-stroke: 1px #F8F8F8;
+  text-shadow: 0px 1px 4px #23430C;
+}
+
+#shadow02 {
+  color: white;
+  -webkit-text-stroke: 1px #F8F8F8;
+  text-shadow: 0px 2px 4px blue;
+}
+
+#shadow03 {
+  color: #333;
+  -webkit-text-stroke: 1px #282828;
+  text-shadow: 0px 4px 4px #282828;
+}
+
+#funkyDouble {
+    background-color: #000000;
+    margin: 40px auto;
+    \font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: #dfdfdf;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 4px 4px 0px #000, 
+                -4px 0 0px #000,
+                7px 4px 0 #fff;
+}
+
+#coloredShadow {
+    margin: 40px auto;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 100px;
+    font-weight: bold;
+    color: #dfdfdf;
+    text-align: center;
+}
+#y {
+  text-shadow: 0 1px 2px #75b663,
+               1px 3px 1px #5ea04b, 
+               2px 5px 1px #5b9c49, 
+               4px 7px 1px #518b41, 
+               6px 9px 1px #477939,
+               8px 11px 1px #3d6831,
+               10px 13px 1px #335729,
+               12px 15px 1px #294521,
+               14px 17px 1px #1e3418;
+}
+
+#o {
+  text-shadow: 0 1px 2px #9d64c4,
+            1px 3px 1px #9759c0,
+            2px 5px 1px #8b46b9,
+            4px 7px 1px #7d3fa6,
+            6px 9px 1px #6f3894,
+            8px 11px 1px #613181,
+            10px 13px 1px #532a6f,
+            12px 15px 1px #45235c,
+            14px 17px 1px #381c4a;
+}
+
+#u {
+  text-shadow: 0 1px 2px #c48564,
+               1px 3px 1px #c07d59,
+               2px 5px 1px #b96e46,
+               4px 7px 1px #a6633f,
+               6px 9px 1px #945838,
+               8px 11px 1px #814d31,
+               10px 13px 1px #6f422a,
+               12px 15px 1px #5c3723,
+               14px 17px 1px #4a2c1c;
+}
+
+#fallen {
+    background-color: black;
+    margin: 40px auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5px;
+  transform: skew(40deg)rotate(-10deg)rotateX(50deg)translate3d(0, 0, 0);
+   -webkit-perspective: 100px;
+    perspective: 100px;
+}
+
+p::before {
+    text-shadow: 0 2px 3px #747474, 
+                 -3px 3px 1px #222,
+                 -6px 5px 1px #474747,
+                 -9px 7px 1px #747474,
+                 -12px 9px 1px #565656,
+                 -15px 11px 1px #343434,
+                 -22px 15px 1px #171717;
+}
+p:before,
+p::after {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    content: attr(data-text)
+}
+p::after {
+    color: #edc;
+}
+
+div#parent {
+    background: url('https://www.dl.dropboxusercontent.com/s/rv0tbpx6fmtr4vi/texture.jpg') repeat;
+    padding: 10px;
+}
+
+#knockout {
+    font-family: 'Abril Fatface', cursive;
+    font-size: 80px;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+    padding: 20px;
+    mix-blend-mode: multiply;
+    text-shadow: 5px 4px 11px rgb(0,0,0), 0 2px 5px rgb(0,0,0);
+    text-align: center;
+}
+
+
+
+
+#para_div {
+  padding: 20px 40px;
+  background-color: black;
+  border: 1px solid green ;
+  text-align: center;
+  padding: 20px 40px;
+}
+
+#example1 {
+    color: white;
+    font-size: 40px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: blue;
+    }
+
+    
+    
+    
+#example4 {
+	color: white;
+	font-size: 40px;
+	text-shadow: -1px 1px 0 #000,
+				  1px 1px 0 #000,
+				 1px -1px 0 #000;
+				-1px -1px 0 #000;
+}
+
+
+
+#example3{
+	color: #CFC547; /* inner color on the text */
+	font-size: 47px;
+	-webkit-text-stroke: 1px #F8F8F8;
+	text-shadow: 0px 1px 4px #23430C;
+}
+
+
+
+#example10{
+	color: orange;
+	font-size: 47px;
+	-webkit-text-stroke: 1px green;
+	text-shadow: 0px 2px 4px blue;
+}
+
+
+#example11{
+	color: #333;
+	background-color: aquamarine;
+	font-size: 56px;
+	-webkit-text-stroke: 1px #282828;
+	text-shadow: 0px 4px 4px #282828;
+}
+
+
+
+#example12 {
+  margin: 40px auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70px;
+  color: #121212;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 0 2px 1px #747474, 
+      -1px 3px 1px #767676, 
+      -2px 5px 1px #787878, 
+      -3px 7px 1px #7a7a7a,
+      -4px 9px 1px #7f7f7f,
+      -5px 11px 1px #838383,
+      -6px 13px 1px #878787,
+      -7px 15px 1px #8a8a8a, 
+      -8px 17px 1px #8e8e8e,
+      -9px 19px 1px #949494,
+      -10px 21px 1px #989898,
+      -11px 23px 1px #9f9f9f,
+      -12px 25px 1px #a2a2a2, 
+      -13px 27px 1px #a7a7a7,
+      -14px 29px 1px #adadad,
+      -15px 31px 1px #b3b3b3,
+      -16px 33px 1px #b6b6b6,
+      -17px 35px 1px #bcbcbc, 
+      -18px 37px 1px #c2c2c2,
+      -19px 39px 1px #c8c8c8,
+      -20px 41px 1px #cbcbcb,
+      -21px 43px 1px #d2d2d2,
+      -22px 45px 1px #d5d5d5, 
+      -23px 47px 1px #e2e2e2,
+      -24px 49px 1px #e6e6e6,
+      -25px 51px 1px #eaeaea,
+      -26px 53px 1px #efefef;
+}
+
+
+
+#example13 {
+  margin: 40px auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 80px;
+  color: #67875d;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 0 2px 1px #79a06d, 
+      -1px 3px 1px #82ad75, 
+      -2px 5px 1px #8ebf80;
+}
+
+
+
+#example14 {
+  margin: 40px auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 2px 3px 7px white, 
+      0 10px 1px red;
+}
+
+
+
+
+#example15 {
+  margin-top: 40px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 3px 3px 20px #ff99cc,
+    -2px 1px 30px #ff99cc;
+}
+
+
+
+#example16 {
+  margin-top: 40px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: #CFC547;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 16px 22px 11px rgba(168,158,32,0.8);
+}
+
+
+
+
+#example17 {
+  margin: 40px auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 80px;
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow: 0 2px 3px #747474, 
+      1px 3px 4px #222, 
+      0 8px 3px #474747, 
+      0 11px 4px #747474,
+      0 14px 4px #565656,
+      0 17px 4px #343434,
+      0 20px 4px #171717;
+}
+
+
+
+#example18 {
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+   transform: scaleY(-1);
+  -moz-transform: rotateX(210deg);
+  -o-transform: rotateX(210deg);
+  -webkit-transform: rotateX(210deg);
+  transform: rotateX(210deg);
+  perspective: 200px;
+  -webkit-mask-image: -webkit-gradient(linear, right top, right bottom, from(transparent), color-stop(20%, transparent), to(rgba(0, 0, 0, 0.4)));
+}
+
+
+p {
+  margin: 40px auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 5px;
+}
+
+
+#shadow1 {
+  color: #dfdfdf;
+  text-shadow: 0 0 2px #dfdfdf, 
+      -4px 5px 0 #b8b8b8, 
+      -7px 11px 0 #747474,
+      -12px 17px 0 #343434,
+      -17px 23px 0 #000;
+}
+
+#shadow2 {
+  color: #67875d;
+  text-shadow: 0 0 2px #67875d, 
+      -4px 5px 0 #5d7755, 
+      -7px 11px 0 #4d6047,
+      -12px 17px 0 #2e382b,
+      -17px 23px 0 #000;
+}
+#elegant {
+    background-color: white;
+}
+
+
+#centered {
+  margin: 40px auto;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 70px;
+  font-weight: bold;
+  color: #CFC547;
+  text-align: center;
+  letter-spacing: 5px;
+  text-shadow:
+                3px 0px 7px rgba(81,67,21,0.8), -3px 0px 7px rgba(81,67,21,0.8), 0px 4px 7px rgba(81,67,21,0.8);
+}
+
+#far_flung {
+    background-color: #121212;
+    margin-top: 40px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 70px;
+    font-weight: bold;
+    color: blue;
+    text-align: center;
+    letter-spacing: 5px;
+    text-shadow: 16px 22px 11px rgba(168,158,32,0.8);
+}
+
+#coolExample {
+  background: linear-gradient(to left, #3a9ebc, #33b73c, #c4bf3a, #d65a4d);
+  /*font-family: 'Montserrat', sans-serif;*/
+  font-family: 'Abril Fatface', cursive;
+  font-size: 100px;
+  font-weight: bold;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-size: 200% 100%;
+  -webkit-animation: bgcolor 20s ease infinite;
+  animation: bgcolor 20s ease infinite;
+}
+
+@-webkit-keyframes bgcolor {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes bgcolor {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes bgcolor {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+#bgVideo {
+    background: url('https://www.dl.dropboxusercontent.com/s/bzi1r7r0rsaqoqg/child.gif');
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 50% 100%;
+}
+
+#galaxy {
+    background: url('https://www.dl.dropboxusercontent.com/s/emrm1o6sun4m68s/galaxy.jpg');
+    /*font-family: 'Montserrat', sans-serif;*/
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+    font-weight: bold;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-size: 200% 100%;
+}
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+ <div>   
+    <p id="example1">This text has stroke<br>Example #01</p> 
+</div>
+
+<div>
+    <p id="example4">This text has stroke<br>Example #02</p>
+</div>
+
+
+<div>
+    <p id="example3">Text Stroke<br>Example #03</p>
+</div>
+
+
+<div>
+    <p id="example10">Text Stroke <br> Example #10</p>
+</div>
+
+
+<div id="example11">
+    <p id="example11">Text Stroke<br>Example #11</p>
+</div>
+
+
+<div id="elegant">
+    <p id="example12">Dropping it Elegantly<br>Example #12</p>
+</div>
+
+<div>
+    <p id="example13">Green Glare<br>Example #13</p>
+</div>
+
+
+<div>
+    <p id="example14">Double Shadow<br>Example #14</p>
+</div>
+
+<p id="example15">Smoky Shadow<br>Example #15</p>
+<div>
+    <p id="example16">Far Flung Shadow<br>Example #16</p>
+</div>
+
+<div>
+    <p id="example17">Perspective View of 3-D Text<br>Example #17</p>
+</div>
+
+<div id="para_div">
+    <p>Glass Shadow</p>
+    <p id="example18">Glass Shadow</p>
+</div>
+
+<div id="layered_shadow">
+    <p id="shadow1">Layered</p>
+    <p id="shadow2">Shadow</p>
+</div>
+
+
+<div id="rainbow_effect">
+    <p id="rainbow_effect">Rainbow Effect<br>Example #20</p>
+</div>
+
+<div id="glowing_text">
+    <p id="glowing_text">Glowing Text<br>Example #21</p>
+</div>
+
+<div id="descending_shadow">
+    <p id="descending_shadow">Descending Shadow<br>Example #22</p>
+</div>
+<div id="centered">
+    <p id="centered">Centered Text Shadow<br>Example 23</p>
+</div>
+
+<div id="far_flung">
+    <p id="far_flung">Far Flung Shadow<br>Example #24</p>
+</div>
+
+
+<div id="perspective_3d">
+    <p id="perspective_3d">Perspective View of 3-D Text<br>Example #25</p>
+</div>
+
+<div id="blurred">
+    <p id="blurred">Blurred Text<br>Example #26</p>
+</div>
+
+
+<div id="descending">
+    <p id="descending">Descending Shadow<br>Example #27</p>
+</div>
+
+<div id="beautifulOutline">
+    <p id="beautifulOutline">Beautifully Outlined<br>Example #28</p>
+</div>
+
+<div id="outlined">
+    <p id="outlined">Outlined Text<br>Example #29</p>
+    <p id="shadow01">Shadow</p>
+    <p id="shadow02">Shadow</p>
+    <p id="shadow03">Shadow</p>
+</div>
+
+<div id="funkyDouble">
+    <p id="funkyDouble">Funky Double Shadow<br>Example #30</p>
+</div>
+
+<div id="coloredShadow">
+    <p>
+        <span id="y">Y</span>
+        <span id="o">O</span>
+        <span id="u">U</span
+    </p>
+</div>
+
+<div>
+<div id="fallen">
+    <p data-text="fallen">The Fallen Text!<br>Example #31</p>
+</div>
+</div>
+
+<div id="parent">
+    <p id="knockout">knockout Text<br>Example #32</p>
+</div>
+
+
+<div id="coolExample">
+    <p>knockout Text<br>Example #33</p>
+</div>
+
+
+
+<div id="bgVideo">
+    <p>Video Playing Text<br>Example #34</p>
+</div>
+
+
+
+<div id="galaxy">
+    <p>Galaxy Text<br>Example #35</p>
+</div>
+
+
+
+
+<br><br><br><br><br>
+
+
+
+
+
+</body>
+</html>
